@@ -148,8 +148,16 @@ with tab2:
 # TASKS TAB
 with tab3:
     st.title('Task Manager')
-    todo, doing, done = st.coluns(3)
+    todo, doing, done = st.columns(3)
+    with todo:
+        st.header('To do tasks')
+        
+        
+    with doing:
+        st.header('Doing')
     
+    with done:
+        st.header('Done')
     
 
 con.commit()
